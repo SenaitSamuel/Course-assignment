@@ -1,0 +1,198 @@
+/*********************************
+ 1. header 
+*********************************/
+header
+{
+	position:fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: $body-bg;
+	z-index: 10;
+}
+.top_nav 
+{
+	width: 100%;
+	height: 50px;
+	background:  $primary-color;
+}
+ 
+.top_nav_menu {
+	display: inline-block;
+	position: relative;
+	min-width: 50px;
+	padding-right: 20px;
+	padding-left: 20px;
+	text-align: center;
+	vertical-align: middle;
+	background:  $primary-color;
+    float: right;
+     a{
+	display: block;
+	color: $body-bg;
+	font-weight: 400;
+	height: 50px;
+	line-height: 50px;
+	font-size: 14px;
+    text-decoration: none;
+          i{
+	margin-left: 8px;
+}
+}
+}
+  
+.top_nav_menu:hover .top_nav_sub_menu{
+	visibility: visible;
+	top: 100%;
+}   
+
+
+ 
+.top_nav_sub_menu  {
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 120%;
+	margin: 0;
+	width: 70%;
+	background: $light-color;
+	visibility: hidden;
+	z-index: 1;
+	box-shadow: 0 0 25px rgba(63, 78, 100, 0.15); 
+    li{
+
+	line-height: 50px;
+    a{
+	display: block;
+	color: $dark-color;
+	border-bottom: solid 1px $body-bg;
+	font-size: 14px;
+    text-decoration: none;
+    &:hover{
+	background-color: transparent;
+    color: $secondary-color;
+    border-bottom: solid 3px $secondary-color;
+    cursor: pointer;
+}
+
+ i{
+	margin-right: 10px;
+}   
+
+}
+}
+}
+    
+ 
+/*********************************
+1.2 Main Navigation
+*********************************/
+
+.main_nav_container {
+	display: flex;
+    flex-direction: row;
+	background: $body-bg;
+	box-shadow: 0 0 16px rgba(0, 0, 0, 0.15);
+}
+
+.logo_container{
+	position: absolute;
+	top: 45%;
+	left: 100px;
+     a{
+	font-size: 45px;
+	color: $dark-color;
+    text-decoration: none;
+        span{
+	color:  $primary-color;
+
+}
+
+}
+
+}
+.navbar{
+	width: 100%;
+	height: 80px;
+	margin-left: 20%;
+	padding-right: 20px;
+    
+}
+
+
+.navbar_menu li{
+	display: inline-block;
+    a{
+	display: block;
+	color: $dark-color;
+	padding: 30px;
+    text-decoration: none;
+        &:hover{
+    color: $secondary-color;
+    border-bottom: solid 3px $secondary-color;
+    cursor: pointer;
+}
+
+    
+	
+}
+}
+
+
+.checkout_items{
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+    top: 80px;
+	width: 50px;
+	height: 20px;
+	border-radius: 50%;
+	background: $secondary-color;
+	font-size: 15px;
+  
+    a span{
+	color: $body-bg;
+}  
+}
+
+
+ /*********************************
+1.3 Hamburger Menu
+*********************************/
+.nav {
+     text-align: right;
+     height: 70px;
+    line-height: 70px;
+}
+.menu {
+    margin: 0 30px 0 0;
+    list-style-type: none;
+   
+    a {
+    clear: right;
+    text-decoration: none;
+    margin: 0 10px;
+    visibility: hidden;
+    color: $dark-color;
+	font-weight: 500;
+	height: 50px;
+	line-height: 50px;
+	font-size: 14px;
+	text-transform: uppercase;
+    background-color:  $body-bg;
+    border-bottom: 2px solid  $body-bg;
+    
+}
+}
+
+label {
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    width: 26px;
+    float: right;
+}
+#toggle {
+display: none;
+}

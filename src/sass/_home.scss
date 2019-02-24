@@ -1,0 +1,307 @@
+/*********************************
+2. Index page 
+*********************************/
+
+/*********************************
+2.1 Main Slider
+*********************************/
+
+.main_slider{
+	width: 100%;
+	height: auto;
+    
+    }
+.hero_image{
+	width: 100%;
+    height: auto;
+    margin-top: -30%;
+        img{
+	width: 100%;
+   }
+    }
+	.main_slider_content{
+	width: 100%;
+    height: 200px;
+    top: 400px;  
+    left: 70px; 
+    padding: 20px;
+    position: relative;
+    background-color: rgb(224,224,224) ;
+        opacity: 0.7;
+        h2{
+	font-weight: 400;
+	line-height: 1;
+    text-align: center;
+    padding-bottom:  20px;
+        }  
+        h3{
+	font-weight: 400;
+	line-height: 1;
+    text-align: center;
+    padding-bottom:  20px;
+   
+}
+}
+  
+button {
+    background-color: $secondary-color;
+    color: $body-bg;
+    position: absolute;
+    font-size: 18px;  
+    font-weight: bold;
+    
+    &:hover{
+    opacity: 0.5;
+    background-color: $secondary-color;
+}
+    
+}
+.btn_banner{
+    width: 160px;
+	height: 46px;
+	background: $secondary-color;
+	cursor: pointer;
+    margin-left: 33.3%;
+    margin-top: 15px;
+        a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $body-bg;
+} 
+}
+
+
+
+    
+
+
+
+
+
+/*********************************
+2.2 new arrivals
+*********************************/
+.new_arrivals{
+    margin-top: 0;
+ }   
+    .new_arrivals_title{
+	
+    text-align: center;
+    text-decoration: underline;
+    
+}
+     
+
+
+
+/*********************************
+2.2.2 New Arrivals Products Grid
+*********************************/
+
+.product-grid{
+    display: grid;
+    grid-gap: 50px;
+    padding: 20px 20px 20px 20px;
+    justify-content: space-between;
+    grid-template-columns: 1fr  1fr 1fr  ;
+    margin-top: 5%;
+  } 
+
+    .product-item{
+    display: block;
+	position: relative;
+	width: 100%;
+    height: auto;
+    border: solid 1px $light-color;
+        &:hover {
+	border: solid 2px $secondary-color;
+    visibility: visible;
+	opacity: 0.7;
+}
+ }     
+ .product_image img{
+	width: 100%;
+    padding-top: 40px;
+}
+ .product_info{
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+   
+     .product_name{
+	top: 15px;
+    text-align: center;
+     }
+      a{
+	color: $dark-color;
+	line-height: 20px;
+     }
+     .product_price{
+	font-size: 16px;
+	color: $secondary-color;
+	font-weight: 600;
+     margin-bottom: 30px;
+    text-align: center;
+}
+}
+ .add_to_cart_button{
+	width: 160px;
+	height: 46px;
+	background: $secondary-color;
+	cursor: pointer;
+    margin-left: 33.3%;
+    color: $body-bg;
+    text-transform: uppercase;
+    text-align: center;
+     padding: 20px;
+     margin-top: 20px;
+   
+		
+}
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+/*********************************
+2.3 Newsletter
+*********************************/
+
+.newsletter{
+	width: 100%;
+	background:$light-color;
+	margin-top: 81px;
+ }   
+    .newsletter_text{
+	height: 120px;
+    margin-left: 30%;
+    padding-top: 10px;
+        
+        h4{
+	line-height: 24px;
+        }
+        p{
+	line-height: 1.7;
+	color: $dark-color;
+}
+        
+}
+    .newsletter_form{
+	height: 120px;
+    margin-left: 30%;
+    padding-top: 10px;
+}
+    #newsletter_email{
+	width: 300px;
+	height: 46px;
+	background: $body-bg;
+	border: none;
+	padding-left: 20px;
+}
+
+.newsletter_submit_btn{
+	width: 160px;
+	height: 46px;
+	border: none;
+	background: $secondary-color;
+	color:  $body-bg;
+	font-size: 14px;
+	font-weight: 500;
+	text-transform: uppercase;
+	cursor: pointer;
+  
+    &:hover{
+	background: $secondary-color;
+    opacity: 0.7;
+}
+}
+
+
+
+ 
+
+
+
+/*********************************
+ 3. Footer
+*********************************/
+
+.footer
+{
+    display: grid;
+    grid-template-columns: 1fr  1fr  ;
+    height: 150px;
+	background: $primary-color;
+    width: 100%;
+    margin-top: 50px;
+    
+}	
+
+
+.footer_nav_container{
+   margin-left: 100px;
+	
+
+
+}
+.footer_nav li{
+	display: inline-block;
+	margin-right: 45px;
+    
+    a{
+	font-size: 14px;
+	color: $body-bg;
+	line-height: 30px;
+    float: left;
+    text-decoration: none;
+    
+        &:hover{
+	color: $secondary-color;
+    opacity: 0.7;
+}
+}
+	
+}
+
+.footer_social  ul{
+	
+    padding-left: 30%;
+    
+    li{
+	display: inline-block;
+	margin-right: 10px;
+
+    a{
+	color: $body-bg;
+	padding: 10px;
+    float: right;
+  
+        &:hover{
+	color: $secondary-color;
+    opacity: 0.7;
+}
+    
+}
+}
+}
+.footer_rights{
+	
+    font-size: 14px;
+	color: $body-bg;
+	line-height: 30px;
+    margin-left: 50%;
+}
+
+
+
+
